@@ -9,6 +9,7 @@ import Item from "./components/items/Item";
 import CategoriesList from "./components/categories/CategoriesList";
 import Category from "./components/categories/Category";
 import AddCategory from "./components/categories/AddCategory";
+import { ExpenseIncomeGraph } from "./components/graph/ExpenseIncomeGraph";
 
 function App() {
   return (
@@ -47,7 +48,7 @@ function App() {
           <Route path="/categories/:id" component={Category} />
           <Route exact path="/addCategory" component={AddCategory} />
 
-          <Route exact path={["/monthlygraph", "/monthlygraph"]} component={CategoriesList} />
+          <Route exact path={["/monthlygraph", "/monthlygraph"]} component={ExpenseIncomeGraph} />
         </Switch>
       </div>
     </Router>

@@ -26,7 +26,6 @@ export const createItem = (amount, description, date, categoryId) => async (disp
 export const retrieveItems = () => async (dispatch) => {
   try {
     const res = await ItemDataService.getAll();
-    console.log('retrieveItems: ',res.data);
     dispatch({
       type: RETRIEVE_ITEMS,
       payload: res.data,
